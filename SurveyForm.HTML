@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">thank you for your feedback</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+  <fieldset>
+    <legend>Please fill in: </legend>
+        <label id="name-label">Your Name <input placeholder="give us your name" id="name" name="name" type="text" required /></label>
+        <label id="email-label">Your Email: <input id="email" name="email" placeholder="give us your email" type="email" required /></label>
+         <label id="number-label">Your Age (years) <input id="number" placeholder="give us your age" type="number" name="number" min="13" max="100" required /></label>
+         <label for="dropdown">What Is Your Current Role?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Full Time</option>
+            <option value="2">Part Time</option>
+            <option value="3">Student</option>
+            <option value="4">Prefer Not To Say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would You Recommend freeCodeCamp To A Friend?</legend>
+        <label><input id="100" type="radio" value="100" name="recommend" checked class="inline" /> 100%</label>
+        <label><input id="50" type="radio" value="50" name="recommend" class="inline" /> 50%</label>
+        <label><input id="0" type="radio" value="0" name="recommend" class="inline" /> 0%</label>
+      </fieldset>
+      <fieldset>
+        <legend>Check All That Apply</legend>
+        <label for="one"><input  id="one" type="checkbox" value="1" name="one" class="inline" /> One</label>
+        <label for="two"><input id="two" type="checkbox" value="2" name="two" class="inline" /> Two</label>
+        <label for="three"><input id="three" value="3" type="checkbox" name="three" class="inline" /> Three</label>
+        <label for="four"><input id="four" type="checkbox" value="4" name="four" class="inline" /> Four</label>
+        <label for="five"><input id="five" type="checkbox" value="5" name="five" class="inline" /> Five</label>
+      </fieldset>
+      <fieldset>
+        <legend>Any thoughts? </legend>
+          <textarea id="thoughts" name="thoughts" rows="3" cols="50" placeholder="I like coding on the beach..."></textarea>
+     </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+      </body>
+  </html>
